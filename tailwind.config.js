@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      'lexend-peta': ['Lexend Peta', 'sans-serif'],
+    },
   },
   plugins: [],
 }
