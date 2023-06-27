@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-inicio',
@@ -6,6 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./inicio.component.css']
 })
 export class InicioComponent {
+
+  constructor(private router: Router){
+    
+  }
+
   weight = 60;
   age = 25;
   height = 170;
@@ -17,5 +23,9 @@ export class InicioComponent {
 
   selectedGender(gender: string){
     this.gender = gender;
+  }
+
+  calculateBMI(){
+    this.router.navigate(['/resultado'])
   }
 }
