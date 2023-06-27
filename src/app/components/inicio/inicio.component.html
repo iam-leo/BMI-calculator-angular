@@ -1,7 +1,7 @@
-<h1 class="text-5xl text-white text-center py-10 font-lexend-peta">BMI Calculator</h1>
+<h1 class="py-10 text-5xl text-center text-white font-lexend-peta">BMI Calculator</h1>
 
 <div class="max-w-[1280px] mx-auto my-10">
-    <div class="flex justify-center items-center gap-x-14">
+    <div class="flex items-center justify-center gap-x-14">
         <button class="w-[200px] p-5 bg-orange-300/40 flex flex-col justify-center items-center text-white rounded-md hover:bg-orange-700 transition-transform ease-in-out hover:transform hover:scale-110">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-gender-male" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -24,36 +24,69 @@
     </div>
     
     <div class="w-[456px] my-6 mx-auto bg-orange-300/40 flex justify-center items-center text-white rounded-md p-4">
-        <div class="text-white w-full flex flex-col justify-center items-center gap-y-3 text-2xl">
+        <div class="flex flex-col items-center justify-center w-full text-2xl text-white gap-y-3">
             <p class="uppercase">Altura</p>
             <p>
-                <span class="font-bold text-3xl">170</span>
+                <span class="text-3xl font-bold">170</span>
                 cm
             </p>
             <input type="range" id="alturaInput" class="w-1/2 bg-orange-200 rounded-lg appearance-none cursor-pointer">
         </div>
     </div>
 
-    <div class="flex justify-center items-center gap-x-14">
-        <button class="w-[200px] p-5 bg-orange-300/40 flex flex-col justify-center items-center text-white rounded-md hover:bg-orange-700 transition-transform ease-in-out hover:transform hover:scale-110">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-gender-male" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <path d="M10 14m-5 0a5 5 0 1 0 10 0a5 5 0 1 0 -10 0" />
-                <path d="M19 5l-5.4 5.4" />
-                <path d="M19 5h-5" />
-                <path d="M19 5v5" />
-            </svg>
-            Masculino
-        </button>
-        <button class="w-[200px] p-5 bg-orange-300/40 flex flex-col justify-center items-center text-white rounded-md hover:bg-orange-700 transition-transform ease-in-out hover:transform hover:scale-110">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-gender-female" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <path d="M12 9m-5 0a5 5 0 1 0 10 0a5 5 0 1 0 -10 0" />
-                <path d="M12 14v7" />
-                <path d="M9 18h6" />
-            </svg>
-            Femenino
-        </button>
+    <div class="flex items-center justify-center gap-x-14">
+        <div class="w-[200px] p-5 bg-orange-300/40 flex flex-col justify-center items-center text-white rounded-md">
+            <div class="flex flex-col items-center text-white">
+                <p class="text-xl">Peso</p>
+                <p class="text-xl"> 
+                    <span class="text-2xl font-bold">70</span>
+                    kg
+                </p>
+            </div>
+            
+            <div class="flex items-center mt-2 gap-x-3">
+                <button class="p-1 bg-orange-600 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus" width="22" height="22" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M5 12l14 0" />
+                    </svg>
+                </button>
+                
+                <button class="p-1 bg-orange-600 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus" width="22" height="22" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 5l0 14" />
+                        <path d="M5 12l14 0" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="w-[200px] p-5 bg-orange-300/40 flex flex-col justify-center items-center text-white rounded-md">
+            <div class="flex flex-col items-center text-white">
+                <p class="text-xl">Edad</p>
+                <p class="text-xl"> 
+                    <span class="text-2xl font-bold">30</span>
+                    años
+                </p>
+            </div>
+            
+            <div class="flex items-center mt-2 gap-x-3">
+                <button class="p-1 bg-orange-600 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-minus" width="22" height="22" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M5 12l14 0" />
+                    </svg>
+                </button>
+                
+                <button class="p-1 bg-orange-600 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus" width="22" height="22" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 5l0 14" />
+                        <path d="M5 12l14 0" />
+                    </svg>
+                </button>
+            </div>
+        </div>
     </div>
 
     <button class="w-full mx-auto my-6 max-w-[456px] block text-white text-2xl py-2 px-3 bg-orange-600 hover:bg-orange-600/90 rounded-full uppercase ">calcular</button>
