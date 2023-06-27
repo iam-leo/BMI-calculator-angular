@@ -2,10 +2,10 @@
     <div class="max-w-[456px] w-full mx-auto flex flex-col justify-center items-center">
         <h2 class="text-4xl text-white font-lexend-peta mb-9">Resultado</h2>
 
-        <div class="flex flex-col items-center justify-center w-full p-5 text-white rounded-md gap-y-5 bg-orange-300/40">
-            <p class="text-3xl uppercase">estado</p>
-            <p class="text-5xl">18.8</p>
-            <p class="text-3xl">interpretacion</p>
+        <div class="flex flex-col items-center justify-center w-full p-8 text-white rounded-md gap-y-5 bg-orange-300/40">
+            <p class="px-4 py-1 text-2xl font-bold text-center uppercase rounded-full" [ngClass]="colorStatus">{{ status }}</p>
+            <p class="text-5xl font-bold text-center">{{ bmi }}</p>
+            <p class="text-2xl text-center">{{ interpretation }}</p>
         </div>
 
         <button routerLink="/" class="w-full mx-auto my-6 max-w-[456px] block text-white text-2xl py-2 px-3 bg-orange-600 hover:bg-orange-600/90 rounded-full uppercase">re-calcular</button>
