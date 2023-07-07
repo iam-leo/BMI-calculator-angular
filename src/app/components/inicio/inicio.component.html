@@ -1,8 +1,8 @@
-<h1 class="py-10 text-5xl text-center text-white font-lexend-peta">BMI Calculator</h1>
+<h1 class="pt-20 pb-10 text-5xl text-center text-white font-lexend-peta">BMI Calculator</h1>
 
 <div class="max-w-[1280px] mx-auto my-10">
     <div class="flex items-center justify-center gap-x-14">
-        <button id="male" class="w-[200px] p-5 bg-orange-300/40 flex flex-col justify-center items-center text-white rounded-md hover:bg-orange-700 transition-transform ease-in-out hover:transform hover:scale-110" (click)="selectedGender('male')" [ngClass]="gender === 'male' ? 'bg-orange-700 transition-transform ease-in-out transform scale-110' : '' ">
+        <button id="male" class="w-[200px] p-5 bg-orange-300/40 flex flex-col justify-center items-center text-white rounded-md hover:bg-orange-700 transition-transform ease-in-out" (click)="selectedGender('male')" [ngClass]="gender === 'male' ? 'bg-orange-700 transition-transform ease-in-out transform scale-110' : '' ">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-gender-male" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <path d="M10 14m-5 0a5 5 0 1 0 10 0a5 5 0 1 0 -10 0" />
@@ -13,7 +13,7 @@
             Masculino
         </button>
         
-        <button id="female" class="w-[200px] p-5 bg-orange-300/40 flex flex-col justify-center items-center text-white rounded-md hover:bg-orange-700 transition-transform ease-in-out hover:transform hover:scale-110" (click)="selectedGender('female')" [ngClass]="gender === 'female' ? 'bg-orange-700 transition-transform ease-in-out transform scale-110' : '' ">
+        <button id="female" class="w-[200px] p-5 bg-orange-300/40 flex flex-col justify-center items-center text-white rounded-md hover:bg-orange-700 transition-transform ease-in-out" (click)="selectedGender('female')" [ngClass]="gender === 'female' ? 'bg-orange-700 transition-transform ease-in-out transform scale-110' : '' ">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-gender-female" width="44" height="44" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <path d="M12 9m-5 0a5 5 0 1 0 10 0a5 5 0 1 0 -10 0" />
